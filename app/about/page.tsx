@@ -30,7 +30,7 @@ async function getData() {
     const res = await fetch(`http://${host}/api/about`, { method: 'GET' });
 
     // const res = await (await import(`../api/about/route`)).GET();
-    
+
     if (!res.ok) {
         // This will activate the closest `error.js` Error Boundary
         throw new Error('Failed to fetch data')
@@ -54,10 +54,11 @@ const About = async () => {
                 <div className='container pt-10 mx-auto'>
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
                         <div className='mb-10'>
-                            <SectionTitle title={`UI/UX Designer & Developer`} />
+                            <SectionTitle title={`Frontend Developer`} />
                             <div className="font font-roboto">
-                                <p className='pb-4 font-roboto text-dark-theme-text'>Dolor reprehenderit aut repudiandae maiores recusandae. Consequatur dolor nisi labore commodi ipsa? Excepturi velit laboriosam at voluptatibus cupiditate est vel. Dolorem praesentium itaque fugiat placeat quas consequatur? Obcaecati natus rerum</p>
-                                <p className='pb-4 font-roboto text-dark-theme-text'>Consectetur consectetur nesciunt nesciunt blanditiis amet? Quod quis unde aliquid excepturi laudantium? Illo architecto aliquam velit illo magnam neque perferendis sint Incidunt eius ipsa inventore labore eos velit. Minus hic magni reiciendis necessitatibus ex Quidem officia deleniti accusamus obcaecati dolores. Porro culpa quibusdam impedit porro praesentium excepturi. Alias ab consequatur?</p>
+                                <p className='pb-4 font-roboto text-dark-theme-text'>As an ambitious and dedicated Front-End Developer with a specialization in React.js, my goal is to leverage my technical expertise and creative mindset to design and develop captivating user experiences that push the boundaries of web applications. Driven by a passion for innovation, I strive to cont</p>
+                                <p className='pb-4 font-roboto text-dark-theme-text'>As a Front-End Developer, my objective is to continuously refine my skills, embrace challenges, and deliver solutions that not only meet but exceed client expectations. Through constant learning and growth, I seek to make a significant impact
+                                    on the digital landscape, while embracing teamwork and innovation to create meaningful and user-friendly digital experiences for global audiences.</p>
                             </div>
                         </div>
                         <div>
@@ -70,10 +71,10 @@ const About = async () => {
                     <section>
                         <SectionMainTitle text='SERVICES' />
                         <div>
-                            <div className='flex justify-between flex-col lg:flex-row'>
-                                <ServiceCard title='Web Development' type='web' description=' Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.' />
-                                <ServiceCard title='Web Development' type='web' description=' Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.' />
-                                <ServiceCard title='Web Development' type='web' description=' Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.' />
+                            <div className='flex justify-between flex-col xl:flex-row'>
+                                <ServiceCard title='Frontend Development' type='web' description='Front-end developers craft website and app interfaces using HTML, CSS, and JavaScript for a user-friendly and visually appealing experience.' />
+                                <ServiceCard title='React Development' type='web' description='A React developer utilizes the React library to build dynamic and interactive user interfaces for web applications, enhancing user experiences.' />
+                                <ServiceCard title='Full stack Development' type='web' description='A React developer utilizes the React library to build dynamic and interactive user interfaces for web applications, enhancing user experiences.' />
                             </div>
                         </div>
                     </section>
