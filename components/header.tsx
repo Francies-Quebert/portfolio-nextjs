@@ -9,8 +9,9 @@ import { FiMail } from "@react-icons/all-files/fi/FiMail";
 import Image from "next/image";
 import ActiveLink from './ActiveLink';
 import image from '@/assets/image.jpg';
-import { Url } from 'url';
-
+import Link from 'next/link';
+import { FiGithub } from '@react-icons/all-files/fi/FiGithub';
+import { FiLinkedin } from '@react-icons/all-files/fi/FiLinkedin';
 export default function layout({ cointainerClassName = '', setShowNavBar }: { cointainerClassName: string, setShowNavBar: (val: boolean) => void }) {
 
   const navigation = [{
@@ -43,7 +44,7 @@ export default function layout({ cointainerClassName = '', setShowNavBar }: { co
     <header className={cointainerClassName}>
       <div className='flex-1'>
         <div className='min-h-full'>
-          <div className='relative'><Image src={image} alt='picture' className='' priority/>
+          <div className='relative'><Image src={image} alt='picture' className='' priority />
             <div className='absolute left-0 bottom-0 right-0 flex z-50 py-2 text-center text-xl text-white  font-bold justify-center items-center before:z-[-1] before:absolute before:opacity-80 before:bg-primary before:w-full before:h-full '><div className='font-jacques'>Francies Fernandes</div></div>
           </div>
           <nav className="nav-menu pb-14">
@@ -59,7 +60,15 @@ export default function layout({ cointainerClassName = '', setShowNavBar }: { co
           </nav>
         </div>
       </div>
-      <footer className='text-xs '>Made with Next.js</footer>
+      <footer >
+        <div className='text-xs text-center flex gap-2 justify-center'>
+          <a href='https://github.com/Francies-Quebert' className='hover:text-white' target='_blank'><FiGithub /></a>
+          <a href='https://www.linkedin.com/in/francies-f-650045aa/' className='hover:text-white' target='_blank'><FiLinkedin /></a>
+        </div>
+        <div className='text-xs pt-1.5'>
+          <Link href='/sitemap.xml' className='text-xs hover:text-white'>sitemap</Link>
+        </div>
+      </footer>
     </header>
   )
 }

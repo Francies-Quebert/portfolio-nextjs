@@ -31,9 +31,10 @@ export const metadata: Metadata = {
     Home page for my portfolio page
   `,
   generator: 'Francies Fernandes',
-  applicationName: 'portfolio francies',
+  applicationName: 'francies portfolio',
   referrer: 'origin-when-cross-origin',
-  keywords: ['Frontend developer', 'React', 'JavaScript', 'Typescript', 'Redux', 'Next.js', 'Node.js', 'MongoDB', 'React developer', 'Full stack developer','developer'],
+  keywords: ['Francies fernandes','Quebert fernandes', 'Frontend developer', 'React', 'JavaScript', 'Typescript',
+    'Redux', 'Next.js', 'Node.js', 'MongoDB', 'React developer', 'Full stack developer', 'developer'],
   authors: [{ name: 'Francies Quebert Fernandes', url: 'https://github.com/Francies-Quebert' }],
   colorScheme: 'dark',
   creator: 'Francies Fernandes',

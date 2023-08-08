@@ -72,7 +72,7 @@
   }
 
   footer {
-    @apply border-t border-[#17181B] h-[2em] text-center;
+    @apply border-t border-[#17181B] h-[3em] text-center;
   }
 }
 
