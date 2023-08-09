@@ -66,7 +66,7 @@ export default function layout({ cointainerClassName = '', setShowNavBar }: { co
         <div className='text-xs text-center flex gap-2 justify-center'>
           <a content='github' href='https://github.com/Francies-Quebert' className='hover:text-white' target='_blank'><FiGithub /></a>
           <a content='linkerIN' href='https://www.linkedin.com/in/francies-f-650045aa/' className='hover:text-white' target='_blank'><FiLinkedin /></a>
-          <Link content='sitemap' href='/sitemap.xml' className='text-xs hover:text-white' ><FaSitemap />  </Link>
+          <a content='sitemap' href='/sitemap.xml' className='text-xs hover:text-white' ><FaSitemap /></a>
         </div>
         <div className='text-xs pt-1.5'>
               License MIT
