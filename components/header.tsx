@@ -12,6 +12,8 @@ import image from '@/assets/image.jpg';
 import Link from 'next/link';
 import { FiGithub } from '@react-icons/all-files/fi/FiGithub';
 import { FiLinkedin } from '@react-icons/all-files/fi/FiLinkedin';
+import { FaSitemap } from '@react-icons/all-files/fa/FaSitemap';
+
 export default function layout({ cointainerClassName = '', setShowNavBar }: { cointainerClassName: string, setShowNavBar: (val: boolean) => void }) {
 
   const navigation = [{
@@ -62,11 +64,12 @@ export default function layout({ cointainerClassName = '', setShowNavBar }: { co
       </div>
       <footer >
         <div className='text-xs text-center flex gap-2 justify-center'>
-          <a href='https://github.com/Francies-Quebert' className='hover:text-white' target='_blank'><FiGithub /></a>
-          <a href='https://www.linkedin.com/in/francies-f-650045aa/' className='hover:text-white' target='_blank'><FiLinkedin /></a>
+          <a content='github' href='https://github.com/Francies-Quebert' className='hover:text-white' target='_blank'><FiGithub /></a>
+          <a content='linkerIN' href='https://www.linkedin.com/in/francies-f-650045aa/' className='hover:text-white' target='_blank'><FiLinkedin /></a>
+          <Link content='sitemap' href='/sitemap.xml' className='text-xs hover:text-white' ><FaSitemap />  </Link>
         </div>
         <div className='text-xs pt-1.5'>
-          <Link href='/sitemap.xml' className='text-xs hover:text-white'>sitemap</Link>
+              License MIT
         </div>
       </footer>
     </header>

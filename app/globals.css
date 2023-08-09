@@ -27,6 +27,7 @@
       --foreground-rgb: #e1e1e1;
       --background: #2C2D2F;
       --primary-background:  #00A3E1;
+      font-family: Roboto, sans-serif;
     }
   }
   
@@ -95,5 +96,20 @@
 
   .image-tech {
     @apply select-none opacity-[0.7] hover:opacity-100 object-cover
+  }
+
+  .information-card{
+    @apply mt-[20px] mb-[50px] relative pl-[50px] w-full;
+  }
+
+  .line-left{
+    @apply w-[2px] h-full bg-primary -left-[10px] top-0 absolute inline-block;
+  }
+  .line-left::before{
+    @apply content-[''] w-[10px] h-[10px] rounded-full border-2 border-primary absolute -left-[4px] -top-[10px];
+  }
+
+  .line-left::after{
+    @apply content-[''] w-[10px] h-[10px] rounded-full border-2 border-primary absolute -left-[4px] top-[100%];
   }
 }
