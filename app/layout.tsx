@@ -55,9 +55,9 @@ export default function RootLayout({
     <html lang="en" className={`${roboto.variable} ${jacques.variable} ${playfair.variable} dark`}>
       <body className={``}>
         <Layout>
-          <AmiateTransition>
+          {/* <AmiateTransition> */}
             {children}
-          </AmiateTransition>
+          {/* </AmiateTransition> */}
         </Layout>
       </body>
     </html>

@@ -53,7 +53,7 @@ export default function layout({ cointainerClassName = '', setShowNavBar }: { co
             <ul>
               {
                 navigation.map(({ name, Icon, href }: { name: string, Icon: () => JSX.Element, href: string }) => <li key={name}>
-                  <ActiveLink onClick={() => setShowNavBar(false)} as={href} href={href} className={`flex uppercase pl-10 items-center py-2 border-y border-[#202226] leading-8 hover:bg-primary/[.5] hover:text-white`} activeClassName={'active'}>
+                  <ActiveLink onClick={() => setShowNavBar(false)} name={name} href={href} className={`flex uppercase pl-10 items-center py-2 border-y border-[#202226] leading-8 hover:bg-primary/[.5] hover:text-white`} activeClassName={'active'}>
                     <span className="pr-[1em] text-[0.8em]"> <Icon /> </span>
                     <span className='text-[0.8em]'>{name}</span>
                   </ActiveLink> </li>)
@@ -64,9 +64,9 @@ export default function layout({ cointainerClassName = '', setShowNavBar }: { co
       </div>
       <footer >
         <div className='text-xs text-center flex gap-2 justify-center'>
-          <a content='github' href='https://github.com/Francies-Quebert' className='hover:text-white' target='_blank'><FiGithub /></a>
-          <a content='linkerIN' href='https://www.linkedin.com/in/francies-f-650045aa/' className='hover:text-white' target='_blank'><FiLinkedin /></a>
-          <a content='sitemap' href='/sitemap.xml' className='text-xs hover:text-white' ><FaSitemap /></a>
+          <a title='github' href='https://github.com/Francies-Quebert' className='hover:text-white' target='_blank'><FiGithub /></a>
+          <a title='linkerIN' href='https://www.linkedin.com/in/francies-f-650045aa/' className='hover:text-white' target='_blank'><FiLinkedin /></a>
+          <a title='sitemap' href='/sitemap.xml' className='text-xs hover:text-white' ><FaSitemap /></a>
         </div>
         <div className='text-xs pt-1.5'>
               License MIT

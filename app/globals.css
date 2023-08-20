@@ -10,6 +10,7 @@
     --foreground-rgb: #e1e1e1;
     --background: #2C2D2F;
     --primary-background:  #00A3E1;
+    font-family: Roboto, sans-serif;
   }
 
   /* @media (prefers-color-scheme: light) {

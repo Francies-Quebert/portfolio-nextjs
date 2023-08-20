@@ -6,6 +6,7 @@ import React, { PropsWithChildren, useState, useEffect } from 'react'
 type ActiveLinkProps = LinkProps & {
   className?: string
   activeClassName: string
+  name: string
 }
 
 const ActiveLink = ({
@@ -31,9 +32,9 @@ const ActiveLink = ({
 
     //   // Using URL().pathname to get rid of query and hash
     const activePathName = pathname
-    console.log(props.href)
+    // console.log(props.href)
 
-    const newClassName: string = (props.href==activePathName) ? `${className} ${activeClassName}`.trim() : className
+    const newClassName: string = (props.href == activePathName) ? `${className} ${activeClassName}`.trim() : className
 
     // const newClassName =
     //   (props.href !== '/' ? activePathNameprops.href : props.href === activePathName)
@@ -49,7 +50,7 @@ const ActiveLink = ({
   ])
 
   return (
-    <Link className={computedClassName} {...props} href={props.href}>
+    <Link title={props.name} className={computedClassName} {...props} href={props.href}>
       {children}
     </Link>
   )
